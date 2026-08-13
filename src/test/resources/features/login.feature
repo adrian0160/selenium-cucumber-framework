@@ -18,7 +18,7 @@ Feature: Login authentication
             | invalid  | SuperSecretPassword! | Your username is invalid!      |
             | invalid  | wrongpass            | Your username is invalid!      |
 
-        Examples: Empty fields (robustness / negative)
+        Examples: Empty fields
             | username | password             | result                         |
             |          | SuperSecretPassword! | Your username is invalid!      |
             | tomsmith |                      | Your password is invalid!      |

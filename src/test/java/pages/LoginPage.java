@@ -2,17 +2,11 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
-public class LoginPage {
-
-    WebDriver driver;
+public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     By username = By.id("username");
@@ -33,8 +27,6 @@ public class LoginPage {
     }
 
     public String getMessage() {
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(flashMessage))
-                .getText();
+        return waitVisible(flashMessage).getText();
     }
 }
