@@ -14,6 +14,7 @@ import java.time.Duration;
  * Holds the WebDriver instance and provides reusable explicit waits,
  * so every page shares a single timeout configuration.
  */
+
 public abstract class BasePage {
 
     protected static final Duration DEFAULT_TIMEOUT = Duration.ofSeconds(10);
