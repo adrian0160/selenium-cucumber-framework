@@ -1,7 +1,6 @@
 Feature: Login authentication
     As a registered user
     I want to log in with my credentials
-    So that I can access the secure area
 
     Background:
         Given the user is on the login page

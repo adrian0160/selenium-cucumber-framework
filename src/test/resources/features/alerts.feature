@@ -3,8 +3,7 @@ Feature: JavaScript alerts handling
     I want to interact with JavaScript dialogs (alert, confirm, prompt)
     So that the application reacts correctly to my choices
 
-    # Test design: coverage per dialog type (alert / confirm / prompt) x user action
-    #   confirm -> accept / dismiss ; prompt -> valid input / empty input (EP) / cancel
+    # Test design: coverage per dialog type (alert / confirm / prompt)
 
     Background:
         Given the user is on the JavaScript alerts page
