@@ -17,7 +17,7 @@ UI test automation framework built with **Java**, **Selenium WebDriver**, **Cucu
 
 ```
 src/test/java
-├── context/        # DriverContext – WebDriver shared across step classes via DI
+├── context/        # DriverContext – WebDriver shared across step classes
 ├── pages/          # Page Objects (locators + actions)
 ├── steps/          # Cucumber step definitions + Hooks (driver lifecycle)
 └──runners/         # TestNG + Cucumber runners
