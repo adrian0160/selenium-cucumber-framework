@@ -13,6 +13,18 @@ UI test automation framework built with **Java**, **Selenium WebDriver**, **Cucu
 | PicoContainer | Dependency injection (shared WebDriver) | 7.34.3 |
 | Maven | Build & dependency management | 3.9+ |
 
+## Test Coverage
+
+**35 automated scenarios** across 5 features (each row of a Scenario Outline counts as one scenario).
+
+| Feature | Scenarios | Test design technique | What is covered |
+|---------|:---------:|-----------------------|-----------------|
+| Login | 6 | Equivalence Partitioning, Decision Table | All valid/invalid combinations of username and password, empty fields |
+| JavaScript Alerts | 6 | Coverage per dialog type and user action | Alert accept, confirm accept/dismiss, prompt with text, empty input and cancel |
+| Drag and Drop | 5 | Positive flows and edge cases | Swapping in both directions, swapping back, dropping a column onto itself |
+| Horizontal Slider | 7 | Boundary Value Analysis | Minimum, maximum, values next to them, values outside the range, intermediate moves |
+| Status Codes | 11 | Validation at HTTP and UI level | Status of every link via HTTP HEAD, broken link detection (4xx/5xx), navigation to each status page |
+
 ## Project Structure
 
 ```
@@ -20,7 +32,7 @@ src/test/java
 ├── context/        # DriverContext – WebDriver shared across step classes
 ├── pages/          # Page Objects (locators + actions)
 ├── steps/          # Cucumber step definitions + Hooks (driver lifecycle)
-└──runners/         # TestNG + Cucumber runners
+└── runners/        # TestNG + Cucumber runners
 src/test/resources
 └── features/       # Gherkin .feature files
 ```
