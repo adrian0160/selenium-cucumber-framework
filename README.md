@@ -1,4 +1,4 @@
-# Selenium + Cucumber Test Automation Framework
+# UI Test Automation Framework (BDD)
 
 UI test automation framework built with **Java**, **Selenium WebDriver**, **Cucumber (BDD)** and **TestNG**, following the **Page Object Model** pattern. UI scenarios run against [the-internet.herokuapp.com](https://the-internet.herokuapp.com).
 
