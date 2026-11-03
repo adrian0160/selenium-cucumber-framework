@@ -2,6 +2,8 @@
 
 UI test automation framework built with **Java**, **Selenium WebDriver**, **Cucumber (BDD)** and **TestNG**, following the **Page Object Model** pattern. UI scenarios run against [the-internet.herokuapp.com](https://the-internet.herokuapp.com).
 
+This project verifies the behaviour of common web UI components. It is built as a reusable foundation: the target application is a practice site, but the architecture and test design apply to any web application.
+
 ## Tech Stack
 
 | Tool | Purpose | Version |
